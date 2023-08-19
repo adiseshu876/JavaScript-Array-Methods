@@ -1,0 +1,158 @@
+ //toString()
+arr =['ses','serr','ererere']
+let x =arr.toString()
+  console.log(arr)
+ 
+//pop()
+ arr =['ses','serr','ererere']
+let x =arr.pop()  
+console.log(arr)
+
+// join()
+ let  arr =['ses','serr','ererere']
+  let x =arr.join('angular')
+  console.log(x)
+
+// concat()
+  let arr =['ses','serr','ererere']
+   stringsd = ['js','py']
+  let joined = arr.concat(stringsd)
+  console.log(joined)
+
+// splice()
+const  data =['ses','serr','ererere','angular','pipe','routing']
+let z = data.splice(1)
+console.log(z)
+
+  let arr =[1,2,3,4,5,6,7,8,9,55,66,]
+  let y = arr.splice(1,2,2,4)
+ console.log(y)
+
+// slice()
+  let arr =[1,2,3,4,5,6,7,8,9,55,66,]
+  let arr =['ses','serr','ererere','ng','spy','data']
+  let y = arr.slice(2,4)
+ console.log(y)
+
+
+// flat()
+ let se= ['sehu','data','ngs',['module','datas'],'angular']
+ c = se.flat()
+ console.log(c)
+ let se= ['sehu','data','ngs',['module','datas',['react','dataChange']],'angular']
+ c = se.flat(2)
+ console.log(c)
+
+// foreach()
+ let z= ['ses','serr','ererere','ng','spy','data']
+z.forEach((datas) => console.log(datas));
+
+ let a = [1,2,3,4,4,5,5]
+ let x = a.forEach((x) => console.log(x))
+
+
+
+// double()
+ let b= [1,2,3,44,55,6,7,8,9,]
+ s = b.map((c) => c*2)
+ console.log(s)
+
+ // filter()
+ let frameworks = [  
+ {id:1 ,name:'angular',author:'google'},
+   {id:2 ,name:'angular',author:'google'},
+   {id:3 ,name:'react',author:'fb'} ,
+   {id:4 ,name:'vue',author:'ms'},
+ ];// x = frameworks.filter((f)=> f.author === 'fb')
+ console.log(x)
+
+ let c = frameworks.filter((n)=>n.author === 'google')
+ console.log(c)
+
+ let g = [1,12,2,3,3,4,4,4,4,45,6,7,,8,8,8,9
+ 
+ ];
+ x = g.filter((r) => r===9)
+ console.log(x)
+
+
+// reduce()
+let g = [1,12,2,3,3,4,4,4,4,45,6,7,8,8,8,9,1]
+
+ f = g.reduce((f,currentvalue)=> f + currentvalue,100)
+ console.log(f)
+let g = [1,12,2,3,3,4,4,4,4,45,6,7,8,8,8,9,1]
+ f = g.reduce((f,currentvalue)=> f + currentvalue)
+ console.log(f)
+
+
+
+
+
+// some()
+let g = [1,2,3,4,5,6,6,7]
+
+ f = g.some((k)=> k<490)
+ console.log(f)
+
+
+
+// function isodd(element, index, array) {
+//     return (element % 2 == 1);
+// }
+ 
+// function geeks() {
+//     let arr = [7,7,7];
+ 
+//     // check for odd number
+//     let value = arr.every(isodd);
+//     console.log(value);
+// }
+// geeks();
+
+// every()
+ let u = [5]
+ y = u.every((p)=>p>7)
+ console.log(y)
+ let u = [1,2,3,4,5,6,7]
+ y = u.every((p)=>p>7)
+ console.log(y)
+
+
+
+// find()
+ let f = [  
+   {name:'angular',author:6},
+   {name:'angular',author:7},
+   {name:'react',author:8} ,
+   {name:'vue',author:9},
+ ];
+ u = f.find((d)=> d.name ==='angular')//satisfice only one condion
+ console.log(u.author)
+
+ let f = [  
+   {name:'angular',author:6},
+   {name:'angular',author:7},
+   {name:'react',author:8} ,
+   {name:'vue',author:9},
+ ];
+ u = f.findIndex((d)=> d.name ==='angular')//satisfice only one condion
+ console.log(u)
+
+
+// sort()
+ let sort =[1,3,4,57,3,56,88,00,11]
+ h = sort.sort()
+ console.log(h)
+
+
+
+
+let sort =[1,3,4,57,3,56,88,00,11]
+ h = sort.sort((a,b)=>a-b)
+ console.log(h)
+
+
+// let sorted =[1,3,4,57,3,56,88,00,11]
+// he = sort.sort((a,b)=>b-a)
+// console.log(he)
