@@ -174,3 +174,233 @@ console.log(z)
 t = arr1.filter((b)=> b%3==0)
 
 console.log(t)
+
+let filterData=[
+  {
+    "id": 1,
+    "name": "one",
+    "desc": "onlyOne"
+  },
+  {
+    "id": 2,
+    "name": "two",
+    "desc": "onlyTwo"
+  },
+  {
+    "id": 1,
+    "name": "two",
+    "desc": "onlyThree"
+  },
+  {
+    "id": 2,
+    "name": "two",
+    "desc": "onlyFour"
+  }
+]
+
+//Filter -->  id=2
+
+// 1-method
+y = filterData.filter((d)=> d.id===2 || name==='two')
+// z = filterData.filter((u)=> u.desc === 'onlyFour')
+
+// console.log(y)
+// console.log(z)
+// 2-method
+// u = filterData.filter(u => u.id===4 || u.name==='two')
+// console.log(u);//false
+// 3-method
+// x = filterData.filter(v => v.desc=== "onlyFour" || v.id===6);//x = filterData.filter(v => v.desc=== "onlyFour" && v.id===6)
+// console.log(x)
+
+// 4-method
+// x = filterData.filter(b => b.id===2 && b.name=== 'ygyyu');//empty arry false
+// console.log(x)
+
+// 5-method
+// c = filterData.filter(n => n.id==2 && n.desc ==="onlyFour" && n.name==='two')
+// console.log(c)
+// 6-method
+// r = filterData.filter(n => n.id==4 && n.desc ==="onlyFour" && n.name==='two')
+// console.log(r);//empty 
+// 7-method
+// w = filterData.filter(n => n.id==2 && n.desc ==="onlyThree" || n.name==='two')
+// console.log(w)
+// 8-method
+// q = filterData.filter(n => n.id==8 || n.desc ==="onlyThree" || n.name==='see')
+// console.log(q)
+// 9-method
+// i= filterData.filter(n => n.id==9 && n.desc ==="empty" || n.name==='cd')
+// console.log(i);//false
+// 10-method
+// o = filterData.filter(n => n.id==1 && n.desc ==="onlyOne" || n.name==='one')
+// console.log(o);//true
+// Filter --> id=2 || name='two'
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Map-methodas
+// 1-method
+// c= filterData.map((b)=> b.id ===2 ||b. name==='one');//true
+// console.log(c)
+// 2-method
+// z= filterData.map((b)=> b.id ===2 && name==='one');//false
+// console.log(z)
+// 3-method
+// v= filterData.map((b)=> b.id === 4 || b.name==='one');//true
+// console.log(v)
+// 4-method
+
+// r= filterData.map((b)=> b.id === 4 && b.name==='one' || b.desc==='fiveue');//alse
+// console.log(r)
+// 5-method
+
+// t = filterData.map((b)=> b.id === 1&& b.name==='one' || b.desc==='fiveue');//true
+// console.log(t)
+// 5-method
+// u= filterData.map((b)=> b.id === 6&&b.name==='frfr'&& b.desc === 'onlyFour');//false
+// console.log(u)
+
+// 6-method
+
+//  u= filterData.map((b)=> b.id === 6&&b.name==='frfr'&& b.desc === 'onlyFour');//false
+// console.log(u)
+
+
+
+// 7-method
+
+
+
+// 8-method
+
+
+
+// 9-method
+
+
+
+
+// var mx= filterData.map((item)=>{
+//   if(item.id===2){
+//     item.price=10;
+//   return item;
+// }else{
+//    item.price=1099;
+//   return item;
+// }
+  
+// })
+
+// console.log(mx)
+
+
+
+
+//  const words = ['spary','data','resduce','gain','use' ,'user','ji']
+//  x = words.filter(v => v.length>2)
+//  console.log(x)
+
+
+// let BigDataa =[ ]
+// for(let i =0;i<filterData.id;i++){
+//   if(filterData[i].id >1){
+   
+//   }
+ 
+// }
+//  console .log(BigDataa)
+
+// const myArray = [-5, -4, 1, 3, 7, 12, 13,27,11, 31,15, 17, 21, 23, 25, 27, 30];
+
+// function findPrime(item){
+
+//   for (let x = 2; item > x; x++) {
+
+//     if (item % x == 0) {
+
+//       return false;
+
+//     }
+
+//   }
+
+//   return item > 1;
+
+// }
+
+// console.log(myArray.filter(findPrime));
+
+let sports = [{id:1,name:'cricket',team:'IND'},
+            {id:2,name:'footBall',team:'PAK'},
+            {id:3,name:'Kabadi',team:'us'},
+            {id:4,name:'jump',team:'IND'},
+           ]
+// var k = sports.filter((c)=>c.name==='cricket')
+// c= sports.filter((m)=>{
+//   if(m.id===3){
+//     m.data='winners';
+//     return m;
+//     }
+//     else{
+//        m.data='looser' ;
+//        return m;
+//                  };
+// })
+// console.log(c)
+              
+//  b =sports.map((x)=>{
+//               if(x.id<3){
+//               x.fee=100000;
+//                 return x
+//               }else{
+//               x.fee=200;
+//                 return x
+//               }
+//  })
+          
+//               console.log(b)
+              
+              
+//  let sportsData =[];
+//  for(i=0;i<sports.id,i++;);
+//    {
+//      if(sports[i].id>2){
+//        sportsData.push(sports[i])
+//      }
+//    }
+// console.log(sportsData)
+
+
+// const string1 = "A string primitive";
+// const string2 = 'Also a string primitive';
+// const string3 = `Yet another string primitive`;
+// console.log(string1,string2,string3 +'hello')
+
+ data = "welocome"
+//  x= data.slice(2,5)
+//  console.log(x)
+//   x= data.splice(2,5)
+//  console.log(x)
+//   x= data.map(x=>{
+//     if(x.data){
+//     x.newData ='to my home'
+//     return data
+//     }
+//   })
+//  console.log(x)
+ 
+//  y = data.push(x=>x.data)
+//  console.log(y)
+
+
